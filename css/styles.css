@@ -1,0 +1,21 @@
+/* Colors
+logo-header-button-black #000000
+logo-grey #939393
+nav-headerthree-sum-grey #263238
+ptext-form-grey #8F95A5
+digit-grey #2A3246
+month-grey #546269
+ */
+
+:root {
+    --logo-header-button-black: #000000;
+    --logo-grey: #939393;
+    --nav-headerthree-sum-grey: #263238;
+    --ptext-form-grey: #8F95A5;
+    --digit-grey: #2A3246;
+    --month-grey: #546269;
+}
+
+a {
+    text-decoration: none;
+}
