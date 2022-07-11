@@ -8,6 +8,7 @@ month-grey #546269
  */
 
 :root {
+    --background: #FFFFFF;
     --logo-header-button-black: #000000;
     --logo-grey: #939393;
     --nav-headerthree-sum-grey: #263238;
@@ -16,6 +17,112 @@ month-grey #546269
     --month-grey: #546269;
 }
 
-a {
+body {
+    font-family: 'Poppins';
+    font-size: 20px;
+    line-height: 1.5;
+    background-color: var(--background);
+    color: var(--ptext-form-grey)
+}
+
+.link {
     text-decoration: none;
+}
+.footer-link .link {
+    color: var(--ptext-form-grey);
+}
+.link-nav {
+    color: var(--nav-headerthree-sum-grey);
+}
+
+ul {
+    list-style-type: none;
+}
+/* header */
+.logo {
+    font-size: 36px;
+    color: var(--logo-grey);
+}
+.logo span {
+    color: var(--logo-header-button-black);
+}
+.nav {
+    font-weight: 500;
+    color: var(--nav-headerthree-sum-grey);
+}
+.button {
+    font-family: 'Poppins';
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+    color: var(--logo-header-button-black);
+}
+
+.button.button-major {
+    font-size: 36px;
+    color: var(--background);
+    background-color: var(--nav-headerthree-sum-grey);
+}
+/* hero */
+.hero-header {
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 1.25;
+    color: var(--logo-header-button-black);
+}
+
+.description {
+    font-size: 24px;
+}
+/* Skills */
+
+.section-name {
+    font-weight: 600;
+    font-size: 48px;
+    color: var(--logo-header-button-black);
+}
+
+.skills-list {
+    font-weight: 600;
+    color: var(--nav-headerthree-sum-grey);
+}
+
+.skills-description {
+    font-size: 16px;
+}
+/* About us */
+.about-us p {
+    line-height: 1.8;
+}
+.digit {
+        font-weight: 600;
+        font-size: 48px;
+        color: var(--digit-grey);
+}
+/* Pricing */
+
+.price-list-name {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 1.6;
+    text-transform: capitalize;
+    color: var(--nav-headerthree-sum-grey);
+}
+.sum {
+    font-size: 24px;
+    text-align: center;
+    color: var(--nav-headerthree-sum-grey);
+}
+
+.period {
+font-size: 18px;
+text-align: center;
+color: var(--month-grey);
+}
+
+/* Footer */
+.footer-link {
+font-size: 24px;
+letter-spacing: 0.02em;
+color: var(--ptext-form-grey);
 }
