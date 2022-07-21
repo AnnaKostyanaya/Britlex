@@ -17,6 +17,45 @@ month-grey #546269
     --month-grey: #546269;
 }
 
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p,
+a {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
 body {
     font-family: 'Poppins';
     font-size: 20px;
@@ -25,9 +64,14 @@ body {
     color: var(--ptext-form-grey)
 }
 
-.link {
-    text-decoration: none;
+.container {
+    width: 1368px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 180px;
+    margin: auto;
 }
+
 .footer-link .link {
     color: var(--ptext-form-grey);
 }
@@ -38,11 +82,15 @@ body {
 ul {
     list-style-type: none;
 }
+
 /* header */
 .logo {
     font-size: 36px;
     color: var(--logo-grey);
+    padding-right: 236px;
+    padding-top: 63px;
 }
+
 .logo span {
     color: var(--logo-header-button-black);
 }
@@ -59,12 +107,53 @@ ul {
 }
 
 .button.button-major {
+    padding: 23px 64px;
+    border-radius: 10px;
     font-size: 36px;
     color: var(--background);
     background-color: var(--nav-headerthree-sum-grey);
 }
+
+.button.button-unic {
+    min-width: 312px;
+    height: 70px;
+    margin-left: auto;
+    margin-top: 55px;
+    text-align: center;
+    background-color: inherit;
+    border: 2px solid #263238;
+    border-radius: 10px;
+}
+
+.nav {
+    display: flex;
+    text-align: center;
+} 
+
+.nav-link {
+    display: flex;
+    text-align: center;
+}
+
+.link.link-nav {
+    display: block;
+    margin-left: 50px;
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+.link.link-nav.first-item {
+    margin-left: 0;
+}
+
+.nav-link-button {
+    display: flex;
+}
+
 /* hero */
 .hero-header {
+    width: 386px;
+    margin-bottom: 40px;
     font-weight: 600;
     font-size: 64px;
     line-height: 1.25;
@@ -72,19 +161,39 @@ ul {
 }
 
 .description {
+    width: 540px;
+    margin-bottom: 60p[;]
     font-size: 24px;
 }
 /* Skills */
 
 .section-name {
+    margin-bottom: 60px;
     font-weight: 600;
     font-size: 48px;
     color: var(--logo-header-button-black);
 }
 
-.skills-list {
+.skills-list-items {
+    display: flex;
+    flex-wrap: wrap;
     font-weight: 600;
     color: var(--nav-headerthree-sum-grey);
+}
+
+.item-skill {
+    display: inline-block;
+    flex-basis: calc((100% - 60px) / 3);
+}
+
+.item-skill.speaking {
+    min-height: 947px;
+    min-width: 426px;
+} 
+
+.item-skill.reading {
+    min-width: 882px;
+    min-height: 338px;
 }
 
 .skills-description {
