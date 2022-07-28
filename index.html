@@ -30,30 +30,33 @@
     <main>
         <!-- hero -->
         <section>
-            <div class="container">
-                <h1 class="hero-header">Learn Any Foreign Language</h1>
-                <p class="description">With our teachers who write a program for
-                    each student, you will be able to make your
-                    first sketch after the first lesson.</p>
-                <button class="button button-major" type="button">Get started</button>
-                <img src="./images/learning-languages.jpg" alt="learning languages" width="654" height="510">
+            <div class="container hero">
+                <div class="hero-desc">
+                    <h1 class="hero-header">Learn Any Foreign Language</h1>
+                    <p class="description">With our teachers who write a program for
+                        each student, you will be able to make your
+                        first sketch after the first lesson.</p>
+                    <button class="button button-major" type="button">Get started</button>
+                </div>
+                <div class="hero-img">
+                    <img src="./images/learning-languages.jpg" alt="learning languages" width="654" height="510">
+                </div>
                 </section>
             </div>
             
         <!-- Skills -->
         <section class="skills">
             <div class="container">
-                <h2 class="section-name speaking">Skills</h2>
+                <h2 class="section-name skill-name">Skills</h2>
                 <ul class="skills-list-items">
                     <li class="item-skill">
-                        <div class="cards">
+                        <div class="cards speaking">
                             <h3 class="skills-list">Speaking</h3>
                             <img src="./images/Shared goals-bro.jpg" alt="shared goals" width="390" height="390">
                             <details class="skills-description">
                                 <summary>Improve your English skills and confidence.
                                     Live classes and interactive lessons online.
                                     20% extra free for a limited time only
-                            
                                     Learn English online and improve your
                                     skills through our high-quality courses
                                     and resources – all designed for adult language learners.</summary>
@@ -62,7 +65,7 @@
                         </div>
                     </li>
                     <li class="item-skill">
-                        <div class="cards">
+                        <div class="cards writing">
                             <h3 class="skills-list">Writing</h3>
                             <img src="./images/Typewriter-bro.jpg" alt="typewriter" width="390" height="264">
                             <details class="skills-description">
@@ -74,7 +77,7 @@
                         </div>
                     </li>
                     <li class="item-skill">
-                        <div class="cards">
+                        <div class="cards listening">
                             <h3 class="skills-list">Listening</h3>
                             <img src="./images/Podcast audience-bro.jpg" alt="podcast audience" width="408" height="274">
                             <details class="skills-description">
@@ -85,7 +88,7 @@
                         </div>
                     </li>
                     <li class="item-skill">
-                        <div class="cards  reading">
+                        <div class="cards reading">
                             <h3 class="skills-list">Reading</h3>
                             <img src="./images/House bookshelves-bro.jpg" alt="house bookshelves" width="390" height="264">
                             <details class="skills-description">
@@ -101,81 +104,98 @@
         </section>
         <!-- About us -->
         <section class="about-us">
-            <div class="container">
-                <h2 class="section-name">About Us</h2>
-                <p>The model offers a framework for discussing problems related to the user's experience, as well as possible ways and
-                    means of solving them. Application development begins at the top level (strategy), where the future software product
-                    is
-                    described quite abstractly from the point of view of the expectations of both users and the customer.</p>
-                <ul>
-                    <li>
-                        <p class="digit">800</p>
-                        <p>Pupils</p>
-                    </li>
-                    <li>
-                        <p class="digit">18</p>
-                        <p>Teachers</p>
-                    </li>
-                    <li>
-                        <p class="digit">6</p>
-                        <p>Foreign
-                            languages</p>
-                    </li>
-                </ul>
+            <div class="container about">
+                <div>
+                    <h2 class="section-name">About Us</h2>
+                    <p class="about-desc">The model offers a framework for discussing problems related to the user's experience, as well as
+                        possible ways and
+                        means of solving them. Application development begins at the top level (strategy), where the future software product
+                        is
+                        described quite abstractly from the point of view of the expectations of both users and the customer.</p>
+                    <ul class="numbers">
+                        <li>
+                            <p class="digit">800</p>
+                            <p>Pupils</p>
+                        </li>
+                        <li>
+                            <p class="digit">18</p>
+                            <p>Teachers</p>
+                        </li>
+                        <li>
+                            <p class="digit">6</p>
+                            <p>Foreign<br>
+                                languages</p>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <img src="./images/Business competition-bro.jpg" alt="business competition" width="540" height="540">
+                </div>
             </div>
-            <img src="./images/Business competition-bro.jpg" alt="business competition" width="540" height="540">
         </section>
         <!-- Pricing -->
         <section>
             <div class="container">
-                <h2 class="section-name">Pricing</h2>
-                <ul>
-                    <li>
-                        <img src="./images/online.jpg" alt="online" width="426" height="320">
+                <h2 class="section-name pricing-name">Pricing</h2>
+                <ul class="price-list">
+                    <li class="price-item">
+                        <img class="picture" src="./images/online.jpg" alt="online" width="426" height="320">
                         <h3 class="price-list-name">Self-study online course</h3>
-                        <p>Start learning English online in live classes
+                        <p class="price-desc">Start learning English online in live classes
                             with qualified EC teachers and students
                             from all over the world.</p>
-                        <p class="sum">£5.99</p>
-                        <p class="period">per month</p>
+                        <div class="sum-period">
+                            <p class="sum">£5.99</p>
+                            <p class="period">per month</p>
+                        </div>
                     </li>
-                    <li>
-                        <img src="./images/lesson.jpg" alt="lesson" width="426" height="320">
+                    <li class="price-item">
+                        <img class="picture" src="./images/lesson.jpg" alt="lesson" width="426" height="320">
                         <h3 class="price-list-name">Live online classes</h3>
-                        <p>Interactive group classes with expert
+                        <p class="price-desc">Interactive group classes with expert
                             teachers. Free 7-day trial</p>
-                        <p class="sum">£12.99</p>
-                        <p class="period">per month</p>
+                        <div class="sum-period">
+                            <p class="sum">£12.99</p>
+                            <p class="period">per month</p>
+                        </div>
                     </li>
-                    <li>
-                        <img src="./images/webinar.jpg" alt="webinar" width="426" height="320">
+                    <li class="price-item">
+                        <img class="picture" src="./images/webinar.jpg" alt="webinar" width="426" height="320">
                         <h3 class="price-list-name">Personal Tuition</h3>
-                        <p>Online one-to-one English tutoring – enjoy
+                        <p class="price-desc">Online one-to-one English tutoring – enjoy
                             our first session for only $1</p>
-                        <p class="sum">£12.99</p>
-                        <p class="period">per month</p>
+                        <div class="sum-period">
+                            <p class="sum">£12.99</p>
+                            <p class="period">per month</p>
+                        </div>
                     </li>
                 </ul>
             </div>
         </section>
         <!-- Contact Us -->
         <section>
-            <div class="container">
-                <h2 class="section-name">Contact Us</h2>
-                <p>Discover your current English level by taking our free online English test. Sign up to our newsletter for learning
-                    tips
-                    and free resources</p>
-                <!-- форма -->
-                <button class="button button-major" type="button">Subscribe</button>
-                <img src="./images/contact.jpg" alt="contact" width="425" height="430">
+            <div class="container contact-us">
+                <div>
+                    <h2 class="section-name">Contact Us</h2>
+                    <p class="contact-desc">Discover your current English level by taking our free online English test. Sign up to our
+                        newsletter for learning
+                        tips
+                        and free resources</p>
+                    <!-- форма -->
+                    <button class="button button-major btn-form" type="button">Subscribe</button>
+                </div>
+                <div>
+                    <img src="./images/contact.jpg" alt="contact" width="425" height="430">
+                </div>
             </div>
         </section>
     </main>
     <footer>
-        <div class="container">
+        <div class="hline"></div>
+        <div class="container footer">
             <a class="logo link" href=""><span>Brit</span>lex</a>
             <ul class="footer-link">
-                <li><a class="link" href="">Terms and Conditions</a></li>
+                <li><a class="link first-item" href="">Terms and Conditions</a></li>
                 <li><a class="link" href="">Privacy Policy</a></li>
                 <li><a class="link" href="">Cookie Policy</a></li>
             </ul>

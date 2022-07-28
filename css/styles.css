@@ -68,7 +68,6 @@ body {
     width: 1368px;
     padding-left: 15px;
     padding-right: 15px;
-    padding-bottom: 180px;
     margin: auto;
 }
 
@@ -89,6 +88,7 @@ ul {
     color: var(--logo-grey);
     padding-right: 236px;
     padding-top: 63px;
+    margin-bottom: 63px;
 }
 
 .logo span {
@@ -142,7 +142,12 @@ ul {
     padding-bottom: 75px;
 }
 
-.link.link-nav.first-item {
+.footer-link .link {
+    margin-left: 80px;
+}
+
+.link.link-nav.first-item,
+.link.first-item {
     margin-left: 0;
 }
 
@@ -162,45 +167,74 @@ ul {
 
 .description {
     width: 540px;
-    margin-bottom: 60p[;]
+    margin-bottom: 60px;
     font-size: 24px;
 }
+
+.container.hero {
+    display: flex;
+
+}
+
 /* Skills */
 
 .section-name {
-    margin-bottom: 60px;
+    margin-top: 180px;
+    padding-bottom: 60px;
     font-weight: 600;
     font-size: 48px;
     color: var(--logo-header-button-black);
 }
 
+.skill-name {
+    text-align: center;
+}
+
 .skills-list-items {
     display: flex;
     flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: flex-start;
     font-weight: 600;
     color: var(--nav-headerthree-sum-grey);
 }
 
 .item-skill {
     display: inline-block;
-    flex-basis: calc((100% - 60px) / 3);
+    width: calc((100% - 60px) / 3);
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    padding-left: 18px;
+    padding-right: 61px;
 }
 
-.item-skill.speaking {
-    min-height: 947px;
-    min-width: 426px;
-} 
-
-.item-skill.reading {
-    min-width: 882px;
-    min-height: 338px;
+.item-skill:not(:first-child) {
+    margin-left: 30px;
 }
+
+.cards.speaking {
+    min-height: 662px;
+}
+
+.item-skill .cards.reading {
+    width: 882px;
+}
+
 
 .skills-description {
     font-size: 16px;
 }
 /* About us */
-.about-us p {
+
+.container.about {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.about-desc {
+    margin-bottom: 30px;
+    width: 652px;
     line-height: 1.8;
 }
 .digit {
@@ -208,7 +242,20 @@ ul {
         font-size: 48px;
         color: var(--digit-grey);
 }
+
+.numbers {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    width: 652px;    
+}
+
 /* Pricing */
+
+.pricing-name {
+    text-align: center;
+    margin-top:  204px;
+}
 
 .price-list-name {
     font-weight: 600;
@@ -229,9 +276,90 @@ text-align: center;
 color: var(--month-grey);
 }
 
+.price-list {
+    display: flex;
+}
+
+.price-item {
+    width: calc((100% - 60px) / 3);
+}
+
+.price-item:not(:first-child) {
+    margin-left: 30px;
+}
+
+.picture {
+    margin-bottom: 50px;
+}
+
+.price-list-name {
+    margin-bottom: 20px;
+}
+
+.price-desc {
+    margin-bottom: 30px;
+    min-height: 90px;
+}
+
+.sum-period {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 5px;
+    margin-bottom: 4px;
+    width: 260px;
+    height: 45px;
+    border-radius: 5px;
+    background-color: rgba(238, 238, 238, 1);
+}
+
+/* Contact us */
+
+.contact-desc {
+    width: 654px;
+    margin-bottom: 30px;
+}
+
+.container.contact-us {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn-form {
+    margin-bottom: 186px;
+}
+
+
 /* Footer */
+
+
+.hline:after {
+    width: 1368px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: auto;
+    content: " ";
+    display: block;
+    border-bottom: 1px solid rgba(196, 196, 196, 1);
+}
+
 .footer-link {
 font-size: 24px;
 letter-spacing: 0.02em;
 color: var(--ptext-form-grey);
 }
+
+.container.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-link {
+    display: flex;
+}
+
+
+
