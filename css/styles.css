@@ -194,15 +194,18 @@ ul {
 
 }
 
+.skills-list {
+    margin-bottom: 20px;
+}
+
 .skills-list-items {
     display: grid;
     grid-template-columns: 426px 426px 426px;
     grid-template-rows: 579px 338px;
     grid-gap: 30px;
     grid-template-areas:
-                "speaking writing listening"
-                "speaking reading reading";
-
+                "speaking writing reading"
+                "speaking listening listening";
     /* justify-content: flex-end;
     align-items: flex-start; */
     font-size: 30px;
@@ -214,8 +217,7 @@ ul {
 .item-skill {
     background-color: #F5F5F5;
     border-radius: 10px;
-    padding-left: 18px;
-    padding-right: 61px;
+    padding: 18px 32px;
 }
 
 .speaking {
@@ -226,10 +228,36 @@ ul {
     grid-area: reading;
 }
 
+.writing {
+    grid-area: writing;
+}
+
+.listening {
+    grid-area: listening;
+}
+
 .skills-description {
     font-size: 16px;
     color: #8F95A5;
+    margin-bottom: 45px;
 }
+
+.learn-more {
+    width: 218px; 
+    height: 60px;
+    border-radius: 10px;
+    background-color: #263238;
+    color: rgba(255, 255, 255, 1);
+    font-family: Poppins;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.two-part {
+    display: flex;
+    align-items: flex-end;
+}
+
 /* About us */
 
 .container.about {
