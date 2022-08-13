@@ -243,6 +243,9 @@ ul {
 }
 
 .learn-more {
+    display: block;
+    text-decoration: none;
+    padding: 15px 51px;    
     width: 218px; 
     height: 60px;
     border-radius: 10px;
